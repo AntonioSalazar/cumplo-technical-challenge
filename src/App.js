@@ -1,10 +1,12 @@
 import React from 'react'
+import Header from './Components/Header'
+import UserProvider from './Context/UserProvider';
 
 const App = () => {
   return (
-    <div>
-      <h1>test</h1>
-    </div>
+    <UserProvider>
+      <Header />
+    </UserProvider>
   )
 }
 
