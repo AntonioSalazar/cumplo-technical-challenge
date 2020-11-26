@@ -177,3 +177,52 @@ header {
       .whyus__reasons-each-paragraph {
         width: 100%;
         text-align: center; } }
+
+.articles {
+  background: chartreuse;
+  display: flex;
+  justify-content: center; }
+  .articles__container {
+    background: coral;
+    width: 80%;
+    max-width: 1200px; }
+  .articles__title {
+    padding: 20px 60px; }
+    .articles__title h4 {
+      font-weight: 700; }
+  .articles__latest {
+    background: yellow;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px; }
+    .articles__latest figure {
+      margin-bottom: 0; }
+    .articles__latest-each {
+      width: 30%; }
+    .articles__latest-img {
+      width: 30%;
+      margin-left: 10px; }
+      .articles__latest-img figure {
+        margin-bottom: 0px; }
+      .articles__latest-img img {
+        width: 100%;
+        height: 50%; }
+    .articles__latest-text {
+      width: 85%;
+      background: #fff;
+      padding: 0 10px 20px 0;
+      margin-bottom: 10px; }
+
+@media only screen and (max-width: 900px) {
+  .articles__container {
+    width: 90%; } }
+
+@media only screen and (max-width: 750px) {
+  .articles__latest {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .articles__latest-each {
+      width: 70%; }
+    .articles__latest-text {
+      width: 100%; } }
