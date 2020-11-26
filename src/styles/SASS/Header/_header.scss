@@ -1,5 +1,7 @@
 header {
     background: #DEE5E5;
+    position: relative;
+    z-index: 3;
 
     & .container {
         width: 80%;
@@ -8,6 +10,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
 
         & a {
             display: inline-block;
@@ -57,5 +60,33 @@ header {
         width: 90%;
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .container{
+        width: 1000%;
+        display: flex;
+        flex-direction: column;
+
+        & a {
+            font-size: 12px;
+        }
+    }
+
+    .header{
+        &__nav{
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        &__login-btn {
+            font-size: 12px;
+        }
+
+        &__logout-btn {
+            font-size: 12px;
+        }
     }
 }

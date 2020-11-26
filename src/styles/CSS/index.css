@@ -12,7 +12,9 @@ p, h1, h2, h3 {
   margin: 0; }
 
 header {
-  background: #DEE5E5; }
+  background: #DEE5E5;
+  position: relative;
+  z-index: 3; }
   header .container {
     width: 80%;
     max-width: 1200px;
@@ -50,6 +52,66 @@ header {
     color: #fff; }
 
 @media only screen and (max-width: 900px) {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column; } }
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 1000%;
+    display: flex;
+    flex-direction: column; }
+    .container a {
+      font-size: 12px; }
+  .header__nav {
+    display: flex;
+    align-items: center;
+    width: 100%; }
+  .header__login-btn {
+    font-size: 12px; }
+  .header__logout-btn {
+    font-size: 12px; } }
+
+.introduction {
+  background: orange;
+  display: flex;
+  justify-content: center; }
+  .introduction__container {
+    width: 80%;
+    max-width: 1200px;
+    background: #ffff00;
+    display: flex;
+    justify-content: center; }
+  .introduction__text {
+    width: 50%;
+    background: green;
+    padding: 100px 40px; }
+    .introduction__text-btn button {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #082D0f;
+      background: linear-gradient(90deg, #247909 28%, #237c10 30%, #07c4d3 87%, #00d4ff 100%); }
+  .introduction__image {
+    width: 50%;
+    background: purple;
+    position: relative; }
+    .introduction__image img {
+      width: 100%;
+      position: absolute;
+      top: -50px;
+      z-index: 1; }
+
+@media only screen and (max-width: 900px) {
+  .introduction__container {
+    width: 90%; }
+  .introduction__text {
+    width: 100%; }
+  .introduction__image {
+    display: none; } }
+
+@media only screen and (max-width: 700px) {
   .container {
     width: 90%;
     display: flex;
