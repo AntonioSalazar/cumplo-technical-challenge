@@ -40,7 +40,7 @@ header {
   background: #DEE5E5; }
   .header__login-btn:hover {
     color: #DEE5E5;
-    background: #082D0f; }
+    background: linear-gradient(to right, #136a8a, #267871); }
 
 .header__logout-btn {
   padding: 5px;
@@ -74,18 +74,16 @@ header {
     font-size: 12px; } }
 
 .introduction {
-  background: orange;
+  background: #fafafa;
   display: flex;
   justify-content: center; }
   .introduction__container {
     width: 80%;
     max-width: 1200px;
-    background: #ffff00;
     display: flex;
     justify-content: center; }
   .introduction__text {
     width: 50%;
-    background: green;
     padding: 100px 40px; }
     .introduction__text-title h3 {
       font-weight: 700; }
@@ -94,10 +92,12 @@ header {
       padding: 10px;
       border-radius: 10px;
       border: 1px solid #082D0f;
-      background: linear-gradient(90deg, #247909 28%, #237c10 30%, #07c4d3 87%, #00d4ff 100%); }
+      background: transparent; }
+      .introduction__text-btn button:hover {
+        color: #fff;
+        background: linear-gradient(to right, #136a8a, #267871); }
   .introduction__image {
     width: 50%;
-    background: purple;
     position: relative; }
     .introduction__image img {
       width: 100%;
@@ -120,27 +120,23 @@ header {
     flex-direction: column; } }
 
 .whyus {
-  background: pink;
+  background: #f3f4f6;
   display: flex;
   justify-content: center; }
   .whyus__container {
     width: 80%;
     max-width: 1200px;
-    background: blue;
     margin-top: 50px; }
   .whyus__text {
     width: 50%;
-    background: crimson;
     padding: 40px 60px; }
     .whyus__text-title h4 {
       font-weight: 700; }
   .whyus__reasons {
-    background: darkcyan;
     padding: 40px;
     display: flex;
     justify-content: space-between; }
     .whyus__reasons-each {
-      background: darkgoldenrod;
       padding: 20px; }
       .whyus__reasons-each-paragraph {
         width: 80%;
@@ -148,12 +144,10 @@ header {
 
 @media only screen and (max-width: 1200px) {
   .whyus {
-    background: pink;
     display: flex;
     justify-content: center; }
     .whyus__container {
       max-width: 1200px;
-      background: blue;
       margin-top: 0px; }
     .whyus__text {
       width: 70%; } }
@@ -179,11 +173,10 @@ header {
         text-align: center; } }
 
 .articles {
-  background: chartreuse;
+  background: #fafafa;
   display: flex;
   justify-content: center; }
   .articles__container {
-    background: coral;
     width: 80%;
     max-width: 1200px; }
   .articles__title {
@@ -191,10 +184,10 @@ header {
     .articles__title h4 {
       font-weight: 700; }
   .articles__latest {
-    background: yellow;
     display: flex;
     justify-content: space-between;
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin-bottom: 50px; }
     .articles__latest figure {
       margin-bottom: 0; }
     .articles__latest-each {

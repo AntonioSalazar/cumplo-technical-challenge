@@ -1,18 +1,16 @@
 .whyus{
-    background: pink;
+    background:hsl(220, 16%, 96%);
     display: flex;
     justify-content: center;
     &__container{
         width: 80%;
         max-width: 1200px;
-        background: blue;
         margin-top: 50px;
 
     }
 
     &__text{
         width: 50%;
-        background: crimson;
         padding: 40px 60px;
 
         &-title h4{
@@ -21,12 +19,10 @@
     }
 
     &__reasons{
-        background: darkcyan;
         padding: 40px;
         display: flex;
         justify-content: space-between;
         &-each {
-            background: darkgoldenrod;
             padding: 20px;
 
             &-paragraph{
@@ -39,12 +35,10 @@
 
 @media only screen and (max-width: 1200px){
     .whyus{
-        background: pink;
         display: flex;
         justify-content: center;
         &__container{
             max-width: 1200px;
-            background: blue;
             margin-top: 0px;
     
         }

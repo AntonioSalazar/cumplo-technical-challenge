@@ -1,10 +1,9 @@
 .articles {
-    background: chartreuse;
+    background: hsl(0, 0%, 98%);
     display: flex;
     justify-content: center;
 
     &__container{
-        background: coral;
         width: 80%;
         max-width: 1200px;
     }
@@ -18,11 +17,10 @@
     }
 
     &__latest {
-        background: yellow;
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
-
+        margin-bottom: 50px;
         & figure {
             margin-bottom: 0;
         }
