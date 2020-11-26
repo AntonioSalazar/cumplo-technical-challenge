@@ -226,3 +226,30 @@ header {
       width: 70%; }
     .articles__latest-text {
       width: 100%; } }
+
+footer {
+  background: #2d314d;
+  color: #fff;
+  display: flex;
+  justify-content: center; }
+
+.footer__container {
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around; }
+
+.footer__logo {
+  padding: 40px; }
+
+.footer__author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+@media only screen and (max-width: 900px) {
+  .footer__logo {
+    display: none; }
+  .footer__author {
+    padding: 40px 0; } }

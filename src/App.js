@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Components/Footer';
 import Header from './Components/Header'
 import Introduction from './Components/Introduction';
 import LatestArticles from './Components/LatestArticles';
@@ -14,6 +15,7 @@ const App = () => {
         <WhyUs />
         <LatestArticles />
       </main>
+      <Footer />
     </UserProvider>
   )
 }
