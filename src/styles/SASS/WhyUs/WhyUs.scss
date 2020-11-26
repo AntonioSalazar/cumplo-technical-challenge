@@ -1,0 +1,92 @@
+.whyus{
+    background: pink;
+    display: flex;
+    justify-content: center;
+    &__container{
+        width: 80%;
+        max-width: 1200px;
+        background: blue;
+        margin-top: 50px;
+
+    }
+
+    &__text{
+        width: 50%;
+        background: crimson;
+        padding: 40px 60px;
+
+        &-title h4{
+            font-weight: 700;
+        }
+    }
+
+    &__reasons{
+        background: darkcyan;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        &-each {
+            background: darkgoldenrod;
+            padding: 20px;
+
+            &-paragraph{
+                width: 80%;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .whyus{
+        background: pink;
+        display: flex;
+        justify-content: center;
+        &__container{
+            max-width: 1200px;
+            background: blue;
+            margin-top: 0px;
+    
+        }
+
+        
+        &__text{
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .whyus{
+
+        &__container{
+            width: 90%;
+            background: blue;
+            margin-top: 0px;
+        }
+        
+        &__text{
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .whyus{
+
+        &__reasons{
+            display: flex;
+            flex-direction: column;
+            &-each {
+                text-align: center;
+                background: darkgoldenrod;
+                padding: 20px;
+    
+                &-paragraph{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

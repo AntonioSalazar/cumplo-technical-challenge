@@ -87,6 +87,8 @@ header {
     width: 50%;
     background: green;
     padding: 100px 40px; }
+    .introduction__text-title h3 {
+      font-weight: 700; }
     .introduction__text-btn button {
       margin-top: 20px;
       padding: 10px;
@@ -100,7 +102,7 @@ header {
     .introduction__image img {
       width: 100%;
       position: absolute;
-      top: -50px;
+      top: -100px;
       z-index: 1; }
 
 @media only screen and (max-width: 900px) {
@@ -116,3 +118,62 @@ header {
     width: 90%;
     display: flex;
     flex-direction: column; } }
+
+.whyus {
+  background: pink;
+  display: flex;
+  justify-content: center; }
+  .whyus__container {
+    width: 80%;
+    max-width: 1200px;
+    background: blue;
+    margin-top: 50px; }
+  .whyus__text {
+    width: 50%;
+    background: crimson;
+    padding: 40px 60px; }
+    .whyus__text-title h4 {
+      font-weight: 700; }
+  .whyus__reasons {
+    background: darkcyan;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between; }
+    .whyus__reasons-each {
+      background: darkgoldenrod;
+      padding: 20px; }
+      .whyus__reasons-each-paragraph {
+        width: 80%;
+        text-align: justify; }
+
+@media only screen and (max-width: 1200px) {
+  .whyus {
+    background: pink;
+    display: flex;
+    justify-content: center; }
+    .whyus__container {
+      max-width: 1200px;
+      background: blue;
+      margin-top: 0px; }
+    .whyus__text {
+      width: 70%; } }
+
+@media only screen and (max-width: 900px) {
+  .whyus__container {
+    width: 90%;
+    background: blue;
+    margin-top: 0px; }
+  .whyus__text {
+    width: 100%; } }
+
+@media only screen and (max-width: 800px) {
+  .whyus__reasons {
+    display: flex;
+    flex-direction: column; }
+    .whyus__reasons-each {
+      text-align: center;
+      background: darkgoldenrod;
+      padding: 20px; }
+      .whyus__reasons-each-paragraph {
+        width: 100%;
+        text-align: center; } }
