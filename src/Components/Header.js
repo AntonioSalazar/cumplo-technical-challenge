@@ -1,9 +1,6 @@
 import React, { useContext } from 'react'
 import { UserContext } from '../Context/UserProvider'
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link,
   } from 'react-router-dom';
 import logo from '../bank-online.png'
@@ -15,10 +12,11 @@ const Header = () => {
         
         <header className='header'>
             <div className="container">
-                <Router>
                         <div className="header__logo">
                             <figure>
-                                <img src={logo} alt="bank-cumplo"/>
+                                <Link to='/'> 
+                                    <img src={logo} alt="bank-cumplo"/>
+                                </Link>
                             </figure>
                         </div>
 
@@ -48,9 +46,7 @@ const Header = () => {
                             }
 
 
-
                         </div>
-                </Router>
             </div>
         </header>
     )

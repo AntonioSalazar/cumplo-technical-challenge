@@ -1,5 +1,6 @@
 import React from 'react'
 import background from '../image-mockups.png'
+import {Link} from 'react-router-dom'
 
 const Introduction = () => {
     return (
@@ -15,8 +16,9 @@ const Introduction = () => {
                         </p>
                     </div>
                     <div className="introduction__text-btn">
-                        <button
-                        >Ver Sucursales</button>
+                        <Link to='/sucursales'>
+                            <button>Ver Sucursales</button>
+                        </Link>
                     </div>
                 </div>
                 <div className="introduction__image">
