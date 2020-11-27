@@ -244,3 +244,51 @@ footer {
     display: none; }
   .footer__author {
     padding: 40px 0; } }
+
+.banks {
+  background: greenyellow;
+  display: flex;
+  justify-content: center; }
+  .banks__container {
+    background: hotpink;
+    width: 80%;
+    max-width: 1200px; }
+  .banks__cards-container {
+    background: chocolate;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px; }
+  .banks__cards-each {
+    width: 45%;
+    margin: 20px;
+    border-radius: 10px; }
+    .banks__cards-each img {
+      border-radius: 10px 10px 0px 0px;
+      width: 100%; }
+    .banks__cards-each h5 {
+      font-weight: 700; }
+    .banks__cards-each p {
+      margin-bottom: 20px; }
+    .banks__cards-each a {
+      display: inline-block;
+      margin: 0 auto;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      color: #082D0f;
+      transition: all ease .2s;
+      font-weight: 700; }
+      .banks__cards-each a:hover {
+        border-bottom: 2px solid #082D0F; }
+
+@media only screen and (max-width: 1050px) {
+  .banks__cards-container {
+    background: chocolate;
+    display: flex;
+    justify-content: center;
+    padding: 20px; } }
+
+@media only screen and (max-width: 700px) {
+  .banks__container {
+    width: 90%; }
+  .banks__cards-each {
+    width: 50%; } }

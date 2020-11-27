@@ -6,6 +6,7 @@ import Header from './Components/Header'
 import Introduction from './Components/Introduction';
 import LatestArticles from './Components/LatestArticles';
 import WhyUs from './Components/WhyUs';
+import Banks from './Components/Banks';
 
 //Routing
 import {
@@ -25,7 +26,7 @@ const App = () => {
       <main>
         <Switch>
           <Route path='/bancos'>
-            Bancos
+            <Banks />
           </Route>
           <Route path='/sucursales'>
             Sucursales
