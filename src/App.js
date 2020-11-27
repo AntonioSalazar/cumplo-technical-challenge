@@ -1,18 +1,26 @@
 import React from 'react'
+
+//Components
 import Footer from './Components/Footer';
 import Header from './Components/Header'
 import Introduction from './Components/Introduction';
 import LatestArticles from './Components/LatestArticles';
 import WhyUs from './Components/WhyUs';
-import UserProvider from './Context/UserProvider';
+
+//Routing
 import {
   Switch,
   Route,
 } from 'react-router-dom';
 
+//Context Providers
+import UserProvider from './Context/UserProvider';
+import BankProvider from './Context/BankProvider';
+
 const App = () => {
   return (
     <UserProvider>
+      <BankProvider>
       <Header />
       <main>
         <Switch>
@@ -30,6 +38,7 @@ const App = () => {
         </Switch>
       </main>
       <Footer />
+      </BankProvider>
     </UserProvider>
   )
 }
