@@ -246,15 +246,13 @@ footer {
     padding: 40px 0; } }
 
 .banks {
-  background: greenyellow;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  background: #f2f2f2; }
   .banks__container {
-    background: hotpink;
     width: 80%;
     max-width: 1200px; }
   .banks__cards-container {
-    background: chocolate;
     display: flex;
     flex-wrap: wrap;
     padding: 20px; }
@@ -266,7 +264,10 @@ footer {
       border-radius: 10px 10px 0px 0px;
       width: 100%; }
     .banks__cards-each h5 {
-      font-weight: 700; }
+      font-weight: 700;
+      transition: all ease .2s; }
+      .banks__cards-each h5:hover {
+        text-shadow: .5px .5px 1px #000; }
     .banks__cards-each p {
       margin-bottom: 20px; }
     .banks__cards-each a {
@@ -282,7 +283,6 @@ footer {
 
 @media only screen and (max-width: 1050px) {
   .banks__cards-container {
-    background: chocolate;
     display: flex;
     justify-content: center;
     padding: 20px; } }
