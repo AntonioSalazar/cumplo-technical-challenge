@@ -21,6 +21,9 @@ const Header = () => {
                         </div>
 
                         <div className="header__nav">
+                            <Link to='/bancos'>
+                                Bancos
+                            </Link>
                             <Link to='/sucursales'>
                                 Sucursales
                             </Link>

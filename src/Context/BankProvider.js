@@ -9,20 +9,27 @@ const BankProvider = props => {
     const [ error, setError ] = useState([])
 
     useEffect(() => {
-        try {
-            
-        } catch (error) {
-            console.log(error)
-            if (error) {
-                setError(error)
-            }
-        }
+        getBanks()
     }, [])
 
+    
+    const getBanks = async() => {
+        try {
+            const data = await fetch('https://tryouts-cumplo.herokuapp.com/banks/');
+            const bankData = await data.json()
+            setBank(bankData)
+        } catch (error) {
+            if(error){
+                setError(error)
+                console.log(error)
+            }
+        }
+    }
     return (
         <BankContext.Provider
             value={{
-                bank
+                bank,
+                error
             }}
         >
                 {props.children}

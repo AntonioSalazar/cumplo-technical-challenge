@@ -24,6 +24,9 @@ const App = () => {
       <Header />
       <main>
         <Switch>
+          <Route path='/bancos'>
+            Bancos
+          </Route>
           <Route path='/sucursales'>
             Sucursales
           </Route>
