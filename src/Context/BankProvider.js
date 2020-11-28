@@ -12,7 +12,6 @@ const BankProvider = props => {
         getBanks()
     }, [])
 
-    console.log(banks)
     
     const getBanks = async() => {
         try {

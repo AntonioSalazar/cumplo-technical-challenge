@@ -135,7 +135,8 @@ header {
   .whyus__reasons {
     padding: 40px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-top: 40px; }
     .whyus__reasons-each {
       padding: 20px; }
       .whyus__reasons-each-paragraph {
@@ -292,3 +293,38 @@ footer {
     width: 90%; }
   .banks__cards-each {
     width: 50%; } }
+
+.branches {
+  background: #fafafa;
+  display: flex;
+  justify-content: center; }
+  .branches__container {
+    padding: 40px;
+    width: 80%;
+    max-width: 1200px; }
+  .branches__no-branch {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .branches__no-branch h2 {
+      display: inline-block;
+      padding: 40px;
+      text-align: center; }
+    .branches__no-branch img {
+      padding: 20px 0px;
+      width: 30%;
+      margin-bottom: 50px; }
+  .branches__cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .branches__cards-container-each {
+      width: 90%;
+      border-radius: 10px;
+      margin: 10px 0; }
+      .branches__cards-container-each img {
+        border-radius: 10px 10px 0px 0px; }
+
+@media only screen and (max-width: 700px) {
+  .branches__container {
+    width: 100%; } }

@@ -17,31 +17,35 @@ import {
 //Context Providers
 import UserProvider from './Context/UserProvider';
 import BankProvider from './Context/BankProvider';
+import BranchesProvider from './Context/BranchesProvider';
+import Branches from './Components/Branches';
 
 const App = () => {
   return (
     <UserProvider>
       <BankProvider>
-      <Header />
-      <main>
-        <Switch>
-          <Route path='/bancos'>
-            <Banks />
-          </Route>
-          <Route path='/sucursales'>
-            Sucursales
-          </Route>
-          <Route path='/nosotros'>
-            nosotros meros
-          </Route>
-          <Route path='/'>
-            <Introduction />
-            <WhyUs />
-            <LatestArticles />
-          </Route>
-        </Switch>
-      </main>
-      <Footer />
+        <BranchesProvider>
+          <Header />
+          <main>
+            <Switch>
+              <Route path='/bancos'>
+                <Banks />
+              </Route>
+              <Route path='/sucursales/:id'>
+                <Branches />
+              </Route>
+              <Route path='/nosotros'>
+                nosotros meros
+              </Route>
+              <Route path='/'>
+                <Introduction />
+                <WhyUs />
+                <LatestArticles />
+              </Route>
+            </Switch>
+          </main>
+          <Footer />
+        </BranchesProvider>
       </BankProvider>
     </UserProvider>
   )

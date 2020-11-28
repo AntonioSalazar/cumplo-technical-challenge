@@ -14,18 +14,19 @@ const Banks = () => {
     return (
             <section className='banks'>
                 <div className="banks__container">
+    
                     <div className="banks__cards-container">
                         {
                             banks.map(eachBank => 
                                  (
-                                    <div className=" banks__cards-each card">
+                                    <div className="banks__cards-each card" key={eachBank.pk}>
                                         <img src={bankImg} alt="Bank"/>
                                         <div className='card-body'>
                                             <h5 className="card-title">{eachBank.name}</h5>
                                             <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis error a similique molestiae quaerat eveniet?</p>
-                                            <Link to='/'>Ver Sucursales</Link>
+                                            <Link to={`/sucursales/${eachBank.pk}`}>Ver Sucursales</Link>
                                         </div>
-                                        </div>
+                                    </div>
                                 )
                             )
                         }
