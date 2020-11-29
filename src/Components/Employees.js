@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
-import { useParams} from 'react-router-dom'
+// import { useParams} from 'react-router-dom'
 import { EmployeesContext } from '../Context/EmployeesProvider'
 
 const Employees = () => {
 
-    const { employees, setSortOrder, previousPage, nextPage } = useContext(EmployeesContext)
+    const { employees, setSortOrder, previousPage, nextPage, currentPage, totalPages } = useContext(EmployeesContext)
     // const { id } = useParams();
 
     return (
@@ -41,16 +41,27 @@ const Employees = () => {
                     </tbody>
                 </table>
                 <div className="employees-table-pagination">
-                    <button
-                        type='button'
-                        className='btn btn-info mr-1 mt-2'
-                        onClick={previousPage}
-                    >Anterior &laquo;</button>
-                    <button
-                        type='button'
-                        className='btn btn-info mr-1 mt-2'
-                        onClick={nextPage}
-                    >Siguiente &raquo;</button>
+
+                    {
+                        currentPage === 1 ? null : (
+                            <button
+                                type='button'
+                                className='btn btn-info mr-1 mt-2'
+                                onClick={previousPage}
+                            >Anterior &laquo;</button>
+                        )
+                    }
+                    {
+                        currentPage === totalPages ? null : (
+                            <button
+                                type='button'
+                                className='btn btn-info mr-1 mt-2'
+                                onClick={nextPage}
+                            >Siguiente &raquo;</button>
+                            
+                        )
+                    }
+                    <p className='mt-2'>Pagina {currentPage} de {totalPages}</p>
                 </div>
             </div>
         </section>

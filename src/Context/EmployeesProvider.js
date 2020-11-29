@@ -46,6 +46,8 @@ const EmployeesProvider = props => {
         <EmployeesContext.Provider
             value={{
                 employees,
+                currentPage,
+                totalPages,
                 setId,
                 setSortOrder,
                 previousPage,

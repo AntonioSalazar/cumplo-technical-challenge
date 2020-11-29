@@ -26,7 +26,7 @@ const Branches = () => {
                 {
                     filteredBranches.length === 0 ? (
                         <div className="branches__no-branch">
-                            <h2>Lo sentimos, este banco aun no a abierto ninguna sucursal, consulta otros <Link to='/bancos'>
+                            <h2>Lo sentimos, este banco aun no ha abierto ninguna sucursal, consulta otros <Link to='/bancos'>
                                 Bancos</Link></h2>
                             <img src={noBankImg} alt="No Available Branch"/>
                         </div>
