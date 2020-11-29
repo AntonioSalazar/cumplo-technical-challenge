@@ -28,3 +28,7 @@
 •	El diseño es libre, haciendo uso de algún framework como Bootstrap, Bulma, etc. :heavy_check_mark:
 <br />
 
+Vista Principal:
+
+![](src/img/main.png)
+
