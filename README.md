@@ -1,7 +1,7 @@
- ![](src/img/Cumplo-colabora.png)
+ ![](src/img/logo-cumplo.png)
   ![](src/img/bank-online.png)
  
- Prueba tecnica realizada como parte del proceso de seleccion para la posicion de desarrollador Front End :smiley::computer:
+ Prueba tecnica realizada como parte del proceso de seleccion para la posicion de desarrollador Front End :nerd_face::computer:
  
  Retos a cubrir:
  
