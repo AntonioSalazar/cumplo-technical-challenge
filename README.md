@@ -1,1 +1,1 @@
- ![](src/img/bank-online.png)
+ ![](src/img/cumplo-logo.png)
