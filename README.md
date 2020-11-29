@@ -1,1 +1,1 @@
- ![](src/img/cumplo-logo.png)
+ ![](src/img/Cumplo-colabora.png)
