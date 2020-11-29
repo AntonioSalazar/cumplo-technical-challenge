@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
+import { useParams} from 'react-router-dom'
 import { EmployeesContext } from '../Context/EmployeesProvider'
 
 const Employees = () => {
 
-    const { employees, setSortOrder } = useContext(EmployeesContext)
-     
+    const { employees, setSortOrder, previousPage, nextPage } = useContext(EmployeesContext)
+    // const { id } = useParams();
 
     return (
         <section className='employees-table'>
@@ -39,6 +40,18 @@ const Employees = () => {
                             }
                     </tbody>
                 </table>
+                <div className="employees-table-pagination">
+                    <button
+                        type='button'
+                        className='btn btn-info mr-1 mt-2'
+                        onClick={previousPage}
+                    >Anterior &laquo;</button>
+                    <button
+                        type='button'
+                        className='btn btn-info mr-1 mt-2'
+                        onClick={nextPage}
+                    >Siguiente &raquo;</button>
+                </div>
             </div>
         </section>
     )

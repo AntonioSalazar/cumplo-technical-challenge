@@ -18,7 +18,6 @@ const Branches = () => {
         return branch.bank === parseInt(id)
     })
 
-    console.log(filteredBranches)
 
     return (
         <section className='branches'>
