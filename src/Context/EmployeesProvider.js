@@ -1,5 +1,4 @@
 import React, { createContext, useState, useEffect } from 'react'
-import axios from 'axios'
 export const EmployeesContext = createContext()
 
 const EmployeesProvider = props => {
@@ -9,14 +8,7 @@ const EmployeesProvider = props => {
     const [ employees, setEmployees ] = useState([]);
     const [ currentPage, setCurrentPage ] = useState(1);
     const [ totalPages, setTotalPages ] = useState(1);
-    const [ newEmployeeData, setNewEmployeeData ] = useState({
-        branch: 1,
-        name: '',
-        middle_name: '',
-        last_name:''
-    })
 
-    const { branch } = newEmployeeData
 
     //paginacion
     const previousPage = () => {
@@ -50,24 +42,6 @@ const EmployeesProvider = props => {
         }
     }
 
-    //agregar empleado
-
-    const addNewEmployee =  () => {
-    
-        axios
-            .post(`http://tryouts-cumplo.herokuapp.com/employees/?branch=${branch}`, newEmployeeData)
-            .then(response => {
-                setNewEmployeeData({
-                    branch: branch,
-                    name: '',
-                    middle_name: '',
-                    last_name:''
-                })
-            })
-            .catch(error => {
-                console.log(error)
-            })
-    }
 
 
     return (
@@ -80,8 +54,8 @@ const EmployeesProvider = props => {
                 setSortOrder,
                 previousPage,
                 nextPage,
-                addNewEmployee,
-                setNewEmployeeData
+                // addNewEmployee,
+                // setNewEmployeeData
             }}
         >
             {props.children}

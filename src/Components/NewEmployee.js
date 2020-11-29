@@ -1,10 +1,10 @@
-import React, { useContext, useState } from 'react'
-import { EmployeesContext } from '../Context/EmployeesProvider'
+import React, {  useState } from 'react'
 import { useParams } from 'react-router-dom'
+import axios from 'axios'
 
 const NewEmployee = () => {
 
-    const {  addNewEmployee, setNewEmployeeData } = useContext(EmployeesContext);
+    // const {  addNewEmployee, setNewEmployeeData } = useContext(EmployeesContext);
 
     const { id } = useParams()
 
@@ -24,17 +24,26 @@ const NewEmployee = () => {
             [e.target.name] : e.target.value
         })
     }
+    console.log(newEmployee)
+
+    const addNewEmployee =  e => {
+        e.preventDefault()
+        axios
+            .post(`https://tryouts-cumplo.herokuapp.com/employees/?branch=${id}`, newEmployee)
+            .then(response => {
+                console.log(response)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
 
     return (
         <section className='new-employee'>
             <div className="new-employee__container">
                 <h2 className='mb-5'>Agregar nuevo empleado</h2>
                 <form
-                    onSubmit={e => {
-                        e.preventDefault()
-                        setNewEmployeeData(newEmployee)
-                        addNewEmployee()
-                    }}
+                    onSubmit={addNewEmployee}
                 >
                     <input 
                         type="text" 
