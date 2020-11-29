@@ -1,1 +1,1 @@
- ![](src/imgs/bank-online.png)
+ ![](src/img/bank-online.png)
