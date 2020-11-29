@@ -1,11 +1,12 @@
 import React, { useContext } from 'react'
-// import { useParams} from 'react-router-dom'
+import { useParams} from 'react-router-dom'
 import { EmployeesContext } from '../Context/EmployeesProvider'
+import { Link } from 'react-router-dom'
 
 const Employees = () => {
 
     const { employees, setSortOrder, previousPage, nextPage, currentPage, totalPages } = useContext(EmployeesContext)
-    // const { id } = useParams();
+    const { id } = useParams();
 
     return (
         <section className='employees-table'>
@@ -62,6 +63,13 @@ const Employees = () => {
                         )
                     }
                     <p className='mt-2'>Pagina {currentPage} de {totalPages}</p>
+                </div>
+
+                <div className="employees-table_add-new-employee mt-2">
+                    <Link
+                        to={`/sucursales/empleados/${id}/nuevo-empleado`}
+                    >Agregar nuevo empleado</Link>
+
                 </div>
             </div>
         </section>

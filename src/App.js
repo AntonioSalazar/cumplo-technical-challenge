@@ -21,6 +21,7 @@ import UserProvider from './Context/UserProvider';
 import BankProvider from './Context/BankProvider';
 import BranchesProvider from './Context/BranchesProvider';
 import EmployeesProvider from './Context/EmployeesProvider';
+import NewEmployee from './Components/NewEmployee';
 
 const App = () => {
   return (
@@ -34,6 +35,9 @@ const App = () => {
             <Switch>
               <Route path='/bancos'>
                 <Banks />
+              </Route>
+              <Route path='/sucursales/empleados/:id/nuevo-empleado'>
+                <NewEmployee />
               </Route>
               <Route path='/sucursales/empleados/:id'>
                 <Employees />

@@ -355,3 +355,18 @@ footer {
 @media only screen and (max-width: 600px) {
   .employees-table__middle-name {
     display: none; } }
+
+.new-employee {
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center; }
+  .new-employee__container {
+    width: 80%;
+    max-width: 1200px;
+    background: orangered;
+    padding: 20px; }
+  .new-employee form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px; }

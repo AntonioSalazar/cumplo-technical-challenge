@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react'
-
+import axios from 'axios'
 export const EmployeesContext = createContext()
 
 const EmployeesProvider = props => {
@@ -9,6 +9,14 @@ const EmployeesProvider = props => {
     const [ employees, setEmployees ] = useState([]);
     const [ currentPage, setCurrentPage ] = useState(1);
     const [ totalPages, setTotalPages ] = useState(1);
+    const [ newEmployeeData, setNewEmployeeData ] = useState({
+        branch: 1,
+        name: '',
+        middle_name: '',
+        last_name:''
+    })
+
+    const { branch } = newEmployeeData
 
     //paginacion
     const previousPage = () => {
@@ -34,11 +42,31 @@ const EmployeesProvider = props => {
             const data = await fetch(`https://tryouts-cumplo.herokuapp.com/employees/?branch=${id}&ordering=${sortOrder}&page=${currentPage}`)
             const employeesData = await data.json()
             setEmployees(employeesData.results)
+            
             const totalPages = Math.ceil(employeesData.count / 5)
             setTotalPages(totalPages)
         } catch (error) {
             console.log(error)
         }
+    }
+
+    //agregar empleado
+
+    const addNewEmployee =  () => {
+    
+        axios
+            .post(`http://tryouts-cumplo.herokuapp.com/employees/?branch=${branch}`, newEmployeeData)
+            .then(response => {
+                setNewEmployeeData({
+                    branch: branch,
+                    name: '',
+                    middle_name: '',
+                    last_name:''
+                })
+            })
+            .catch(error => {
+                console.log(error)
+            })
     }
 
 
@@ -51,7 +79,9 @@ const EmployeesProvider = props => {
                 setId,
                 setSortOrder,
                 previousPage,
-                nextPage
+                nextPage,
+                addNewEmployee,
+                setNewEmployeeData
             }}
         >
             {props.children}

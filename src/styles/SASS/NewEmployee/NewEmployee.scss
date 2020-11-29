@@ -1,0 +1,18 @@
+.new-employee {
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    &__container{
+        width: 80%;
+        max-width: 1200px;
+        background: orangered;
+        padding: 20px;
+    }
+
+    & form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+}

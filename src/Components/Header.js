@@ -24,9 +24,7 @@ const Header = () => {
                             <Link to='/bancos'>
                                 Bancos
                             </Link>
-                            <Link to='/sucursales'>
-                                Sucursales
-                            </Link>
+
                             <Link to='/nosotros'>
                                 Nosotros
                             </Link>

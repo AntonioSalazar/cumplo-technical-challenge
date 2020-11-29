@@ -16,8 +16,8 @@ const Introduction = () => {
                         </p>
                     </div>
                     <div className="introduction__text-btn">
-                        <Link to='/sucursales'>
-                            <button>Ver Sucursales</button>
+                        <Link to='/bancos'>
+                            <button>Ver Bancos</button>
                         </Link>
                     </div>
                 </div>
