@@ -5,11 +5,15 @@ import noBankImg from '../img/no-bank.png'
 import branchesImg from '../img/branches.jpg'
 //Context 
 import { BranchesContext } from '../Context/BranchesProvider'
+import { EmployeesContext }  from '../Context/EmployeesProvider'
 
 const Branches = () => {
-
+    // Branches Context
     const { branches } = useContext(BranchesContext)
     const { id } = useParams()
+    //EmployeesContext
+    const { setId } = useContext(EmployeesContext)
+
     const filteredBranches = branches.filter(branch => {
         return branch.bank === parseInt(id)
     })
@@ -37,7 +41,7 @@ const Branches = () => {
                                         <div className="card-body">
                                             <h5 className="card-title">{eachBranch.name}</h5>
                                             <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                            <Link to='/sucursales/empleados'>Ver empleados</Link>
+                                            <Link to={`/sucursales/empleados/${eachBranch.id}`} onClick={() => setId(eachBranch.id)}>Ver empleados</Link>
                                         </div>
 
                                     </ div>
