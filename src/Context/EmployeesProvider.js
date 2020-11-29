@@ -5,17 +5,18 @@ export const EmployeesContext = createContext()
 const EmployeesProvider = props => {
 
     const [ id, setId ] = useState('')
+    const [ sortOrder, setSortOrder ] = useState('')
     const [ employees, setEmployees ] = useState([]);
 
 
     useEffect(() => {
         getEmployees()
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [id])
+    }, [id, sortOrder])
 
     const getEmployees = async() => {
         try {
-            const data = await fetch(`https://tryouts-cumplo.herokuapp.com/employees/?branch=${id}`)
+            const data = await fetch(`https://tryouts-cumplo.herokuapp.com/employees/?branch=${id}&ordering=${sortOrder}`)
             const employeesData = await data.json()
             setEmployees(employeesData.results)
         } catch (error) {
@@ -23,13 +24,13 @@ const EmployeesProvider = props => {
         }
     }
 
-    console.log(employees)
 
     return (
         <EmployeesContext.Provider
             value={{
                 employees,
-                setId
+                setId,
+                setSortOrder
             }}
         >
             {props.children}

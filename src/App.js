@@ -8,6 +8,7 @@ import LatestArticles from './Components/LatestArticles';
 import WhyUs from './Components/WhyUs';
 import Banks from './Components/Banks';
 import Branches from './Components/Branches';
+import Employees from './Components/Employees';
 
 //Routing
 import {
@@ -35,7 +36,7 @@ const App = () => {
                 <Banks />
               </Route>
               <Route path='/sucursales/empleados/:id'>
-                empleados
+                <Employees />
               </Route>
               <Route path='/sucursales/:id'>
                 <Branches />
@@ -51,7 +52,7 @@ const App = () => {
             </Switch>
           </main>
           <Footer />
-          
+
         </EmployeesProvider>
         </BranchesProvider>
       </BankProvider>

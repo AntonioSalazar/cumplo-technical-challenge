@@ -1,0 +1,41 @@
+
+.employees-table{
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+
+    &__container{
+        width: 80%;
+        max-width: 1200px;
+        padding: 20px;
+        margin: 50px 0px 120px 0px;
+    }
+
+    &__options{
+        padding: 20px;
+        & input[type=radio]{
+            display: inline-block;
+            margin-left: 50px;;
+        }
+    }
+
+    & h2{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and(max-width: 900px){
+    .employees-table{
+        &__container{
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and(max-width: 600px){
+    .employees-table{
+        &__middle-name{
+            display: none;
+        }
+    }
+}
