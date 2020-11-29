@@ -203,9 +203,9 @@ header {
         height: 50%; }
     .articles__latest-text {
       width: 85%;
-      background: #fff;
       padding: 0 10px 20px 0;
-      margin-bottom: 10px; }
+      margin: 10px 0px;
+      text-align: justify; }
 
 @media only screen and (max-width: 900px) {
   .articles__container {
