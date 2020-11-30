@@ -31,6 +31,7 @@ Vista Principal
 
 ![](src/img/main.png)
 <br />
+<br />
 Diseno responsivo:
 
 ![](src/img/main-responsive.png)
@@ -38,7 +39,14 @@ Diseno responsivo:
 Al inspeccionar el codigo en las herraminetas de desarrollador de un navegador se puede comprobar que se utilizo HTML5 semantico:
 ![](src/img/semantic-html.png)
 
+<br />
+<br />
 
+Proyecto hecho con ReactJS
+![](src/img/react.png)
+
+
+Proyecto realizado por Antonio Salazar :raised_hands: :computer: como parte del proceso de seleccion para la posicion de desarrollador front end 
 
 
 
