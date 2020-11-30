@@ -50,7 +50,6 @@ header {
   border: 1px solid #082D0f;
   background: #DEE5E5; }
   .header__logout-btn:hover {
-    background: #EB4644;
     color: #fff; }
 
 @media only screen and (max-width: 900px) {
@@ -382,3 +381,19 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 100px; }
+
+.aboutus {
+  display: flex;
+  justify-content: center; }
+  .aboutus__container {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center; }
+  .aboutus__info-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; }
+    .aboutus__info-img img {
+      width: 50%; }

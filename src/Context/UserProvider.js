@@ -11,6 +11,7 @@ const UserProvider = props => {
         state: null
     }
     const [ user, setUser ] = useState(dataUser);
+    const [ error, setError ]= useState('') 
 
     useEffect(() => {
         detectUser()
@@ -38,7 +39,7 @@ const UserProvider = props => {
         try {
             await auth.signInWithPopup(provider)
         } catch (error) {
-            console.log(error)
+            setError(error)
         }
     }
 
@@ -51,7 +52,8 @@ const UserProvider = props => {
             value={{
                 user,
                 loginUser,
-                logoutUser
+                logoutUser,
+                error
             }}
         >
             {props.children}

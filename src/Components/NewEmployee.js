@@ -2,11 +2,11 @@ import React, {  useState } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import Error from './Error'
-import {Redirect} from 'react-router-dom';
+import {Redirect} from 'react-router-dom'
+import Swal from 'sweetalert2'
+
 
 const NewEmployee = () => {
-
-
     const { id } = useParams()
 
     const newEmployeeData = {
@@ -28,7 +28,7 @@ const NewEmployee = () => {
             [e.target.name] : e.target.value
         })
     }
-    const { name, last_name } = newEmployee
+    const { name, last_name, middle_name } = newEmployee
 
 
     const addNewEmployee =  e => {
@@ -36,9 +36,9 @@ const NewEmployee = () => {
         const regexPattern = new RegExp('^[A-Za-zÀ-ÿ _]*[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ _]*$');
 
         e.preventDefault()
-        if(!name.trim() || !last_name.trim()){
+        if(!name.trim() || !last_name.trim() ||!middle_name.trim()){
             setError(true)
-            setErrorMessage('El nombre y apellido son obligatorios')
+            setErrorMessage('Por favor ingresa los datos solicitados')
             return
         } else if(!regexPattern.test(name) || !regexPattern.test(last_name) ){
             setError(true)
@@ -49,13 +49,17 @@ const NewEmployee = () => {
             axios
                 .post(`https://tryouts-cumplo.herokuapp.com/employees/?branch=${id}`, newEmployee)
                 .then(response => {
-                    console.log(response)
                     setNewEmployee({
                         name: '',
                         middle_name: '',
                         last_name: ''
                     })
                     setRedirect(true)
+                    Swal.fire(
+                        'Empleado agregado',
+                        `Se ha agregado un nuevo empleado a la sucursal con id: ${id}`,
+                        'success'
+                    )
                 })
                 .catch(error => {
                     console.log(error)
@@ -64,7 +68,7 @@ const NewEmployee = () => {
     }
 
     if (redirect) {
-        return <Redirect to={`/sucursales/empleados/${id}`}/>
+        return <Redirect to={`/`}/>
     }
 
     return (

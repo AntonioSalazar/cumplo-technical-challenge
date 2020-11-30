@@ -21,7 +21,6 @@ const BankProvider = props => {
         } catch (error) {
             if(error){
                 setError(error)
-                console.log(error)
             }
         }
     }

@@ -9,6 +9,7 @@ import WhyUs from './Components/WhyUs';
 import Banks from './Components/Banks';
 import Branches from './Components/Branches';
 import Employees from './Components/Employees';
+import AboutUs from './Components/AboutUs';
 
 //Routing
 import {
@@ -29,7 +30,6 @@ const App = () => {
       <BankProvider>
         <BranchesProvider>
         <EmployeesProvider>
-
           <Header />
           <main>
             <Switch>
@@ -42,12 +42,13 @@ const App = () => {
               <Route path='/sucursales/empleados/:id'>
                 <Employees />
               </Route>
+              <Route path='/nosotros'>
+                <AboutUs />
+              </Route>
               <Route path='/sucursales/:id'>
                 <Branches />
               </Route>
-              <Route path='/nosotros'>
-                nosotros meros
-              </Route>
+
               <Route path='/'>
                 <Introduction />
                 <WhyUs />
@@ -56,7 +57,6 @@ const App = () => {
             </Switch>
           </main>
           <Footer />
-
         </EmployeesProvider>
         </BranchesProvider>
       </BankProvider>

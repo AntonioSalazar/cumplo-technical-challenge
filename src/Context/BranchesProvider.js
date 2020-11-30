@@ -6,6 +6,7 @@ const BranchesProvider = props => {
 
 
     const [ branches, setBranches ] = useState([])
+    const [ branchError, serBranchError ] = useState('')
 
     useEffect(() => {
         getBranches()
@@ -17,14 +18,15 @@ const BranchesProvider = props => {
             const BranchesData = await data.json()
             setBranches(BranchesData.results)
         } catch (error) {
-            console.log(error)
+            serBranchError(error)
         }
     }
 
     return (
         <BranchesContext.Provider
             value={{
-                branches
+                branches,
+                branchError
             }}
         >
             {props.children}
