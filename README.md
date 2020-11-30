@@ -30,5 +30,15 @@
 Vista Principal
 
 ![](src/img/main.png)
+<br />
+Diseno responsivo:
+
+![](src/img/main-responsive.png)
+
+Al inspeccionar el codigo en las herraminetas de desarrollador de un navegador se puede comprobar que se utilizo HTML5 semantico:
+![](src/img/semantic-html.png)
+
+
+
 
 
