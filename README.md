@@ -14,15 +14,15 @@
 <br />
 •	La tabla de empleados deberá poder ordenarse por ID de empleado (asc y dec). :heavy_check_mark:
 <br />
-•	El formulario de empleado nuevo deberá de tener validación en cada campo
+•	El formulario de empleado nuevo deberá de tener validación en cada campo :heavy_check_mark:
 <br />
-•	El nombre del empleado deberá aceptar únicamente letras, acentos y espacios.
+•	El nombre del empleado deberá aceptar únicamente letras, acentos y espacios.:heavy_check_mark:
 <br />
-•	El nombre del empleado debe ser obligatorio.
+•	El nombre del empleado debe ser obligatorio. :heavy_check_mark:
 <br />
-•	No se podrá enviar un formulario vacío.
+•	No se podrá enviar un formulario vacío. :heavy_check_mark:
 <br />
-•	El empleado se liga a cada sucursal por el campo ID de la sucursal.
+•	El empleado se liga a cada sucursal por el campo ID de la sucursal.:heavy_check_mark:
 <br />
 •	El diseño es libre, haciendo uso de algún framework como Bootstrap, Bulma, etc. :heavy_check_mark:
 <br />
