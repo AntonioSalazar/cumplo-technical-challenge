@@ -49,7 +49,7 @@ const Employees = () => {
                                 type='button'
                                 className='btn btn-info mr-1 mt-2'
                                 onClick={previousPage}
-                            >Anterior &laquo;</button>
+                            >&laquo; Anterior</button>
                         )
                     }
                     {

@@ -1,5 +1,5 @@
 import React from 'react'
-import background from '../image-mockups.png'
+import background from '../img/image-mockups.png'
 import {Link} from 'react-router-dom'
 
 const Introduction = () => {
@@ -8,12 +8,10 @@ const Introduction = () => {
             <div className="introduction__container">
                 <div className="introduction__text">
                     <div className="introduction__text-title">
-                        <h3>Next Generation digital banking</h3>
+                        <h3>Plataforma de financiamiento colaborativo</h3>
                     </div>
                     <div className="introduction__text-paragraph">
-                        <p>Take your financila life online. You Easybank account will be a one-step-shop for spending,
-                            saving, budgeting, investing and much more.     
-                        </p>
+                        <p>Somos la plataforma de financiamiento colaborativo más grande de América Latina, que a través de la tecnología logramos desintermediar el sistema financiero, haciéndolo más justo y accesible para empresas e inversionistas</p>
                     </div>
                     <div className="introduction__text-btn">
                         <Link to='/bancos'>

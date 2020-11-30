@@ -5,10 +5,10 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
-body {
+body, html {
   font-family: 'Nunito Sans', sans-serif;
   width: 100%;
-  height: 100%; }
+  height: 100vh; }
 
 p, h1, h2, h3 {
   margin: 0; }
@@ -87,6 +87,8 @@ header {
   .introduction__text {
     width: 50%;
     padding: 100px 40px; }
+    .introduction__text-paragraph p {
+      text-align: justify; }
     .introduction__text-title h3 {
       font-weight: 700; }
     .introduction__text-btn button {
@@ -255,6 +257,8 @@ footer {
   .banks__container {
     width: 80%;
     max-width: 1200px; }
+  .banks h2 {
+    padding: 20px 0px 0px 40px; }
   .banks__cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -304,6 +308,9 @@ footer {
     padding: 40px;
     width: 80%;
     max-width: 1200px; }
+  .branches h2 {
+    padding: 20px 0px 0px 60px;
+    margin-bottom: 20px; }
   .branches__no-branch {
     display: flex;
     flex-direction: column;
@@ -315,7 +322,10 @@ footer {
     .branches__no-branch img {
       padding: 20px 0px;
       width: 30%;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
   .branches__cards-container {
     display: flex;
     flex-direction: column;
@@ -359,12 +369,14 @@ footer {
 .new-employee {
   background: #f2f2f2;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  height: 100%; }
   .new-employee__container {
+    margin-top: 100px;
     width: 80%;
     max-width: 1200px;
-    background: orangered;
-    padding: 20px; }
+    padding: 20px;
+    margin-bottom: 200px; }
   .new-employee form {
     display: flex;
     flex-wrap: wrap;

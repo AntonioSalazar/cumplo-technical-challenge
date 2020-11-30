@@ -2,11 +2,13 @@
     background: #f2f2f2;
     display: flex;
     justify-content: center;
+    height: 100%;
     &__container{
+        margin-top: 100px;
         width: 80%;
         max-width: 1200px;
-        background: orangered;
         padding: 20px;
+        margin-bottom: 200px;
     }
 
     & form {

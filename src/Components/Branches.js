@@ -22,7 +22,7 @@ const Branches = () => {
     return (
         <section className='branches'>
             <div className="branches__container">
-
+                <h2>Sucursales:</h2>
                 {
                     filteredBranches.length === 0 ? (
                         <div className="branches__no-branch">

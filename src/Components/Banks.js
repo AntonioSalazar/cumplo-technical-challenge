@@ -14,7 +14,7 @@ const Banks = () => {
     return (
             <section className='banks'>
                 <div className="banks__container">
-    
+                    <h2>Bancos:</h2>
                     <div className="banks__cards-container">
                         {
                             banks.map(eachBank => 

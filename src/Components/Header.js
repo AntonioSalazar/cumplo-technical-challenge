@@ -3,7 +3,7 @@ import { UserContext } from '../Context/UserProvider'
 import {
     Link,
   } from 'react-router-dom';
-import logo from '../bank-online.png'
+import logo from '../img/bank-online.png'
 
 const Header = () => {
 

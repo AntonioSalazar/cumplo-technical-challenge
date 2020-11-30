@@ -6,6 +6,9 @@
         width: 80%;
         max-width: 1200px;
     }
+    & h2 {
+        padding: 20px 0px 0px 40px;
+    }
 
     &__cards-container{
         display: flex;

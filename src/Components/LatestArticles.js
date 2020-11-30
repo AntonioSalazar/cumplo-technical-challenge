@@ -8,7 +8,7 @@ const LatestArticles = () => {
         <section className='articles'>
             <div className="articles__container">
                 <div className="articles__title">
-                    <h4>Latest Articles</h4>
+                    <h4>Ultimos articulos</h4>
                 </div>
                 <div className="articles__latest">
                     <div className="articles__latest-each">
@@ -17,11 +17,11 @@ const LatestArticles = () => {
                         </div>
                         <div className="articles__latest-text">
                             <div className="articles__latest-test-title">
-                                <h5>Treat yourself without worrying</h5>
+                                <h5>México, tierra fértil para las fintech y su desarrollo</h5>
                             </div>
                             <div className="articles__latest-test-paragraph">
                                 <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit libero neque vitae.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eaque eos deleniti eligendi in. Nobis debitis architecto quis perspiciatis dolore quia veniam.
                                 </p>
                             </div>
                         </div>
@@ -33,11 +33,11 @@ const LatestArticles = () => {
                         </div>
                         <div className="articles__latest-text">
                             <div className="articles__latest-test-title">
-                                <h5>Treat yourself without worrying</h5>
+                                <h5>Hay escasez de talento para el ecosistema fintech: experto</h5>
                             </div>
                             <div className="articles__latest-test-paragraph">
                                 <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit libero neque vitae.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim voluptatum magni autem quidem ut dicta.
                                 </p>
                             </div>
                         </div>
@@ -49,11 +49,11 @@ const LatestArticles = () => {
                         </div>
                         <div className="articles__latest-text">
                             <div className="articles__latest-test-title">
-                                <h5>Treat yourself without worrying</h5>
+                                <h5>FinTech en México busca incrementar el volumen de bonos que se operan de forma electrónica</h5>
                             </div>
                             <div className="articles__latest-test-paragraph">
                                 <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit libero neque vitae.
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor possimus ut quibusdam dignissimos eligendi? Consectetur fugit dolore iure.
                                 </p>
                             </div>
                         </div>
