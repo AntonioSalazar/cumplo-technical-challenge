@@ -2,6 +2,10 @@
  
  Prueba tecnica realizada como parte del proceso de seleccion para la posicion de desarrollador Front End :nerd_face::computer:
  
+ Deploy hecho en el hosting de firebase: :fire:
+ 
+ URL: https://cumplo-technical-challenge.web.app/
+ 
  Retos a cubrir:
  
 •	Hacer uso de algún framework JS como Vue o React. :heavy_check_mark:
